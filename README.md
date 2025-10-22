@@ -78,10 +78,11 @@ Simply open index.html in your browser
 
 ## 📸 Screenshot 
 
+![Hero Section](https://github.com/ravikumar-3481/Portfoli0/blob/main/img/hero.jpg)
+![Projects Section](https://github.com/ravikumar-3481/Portfoli0/blob/main/img/project.jpg)
+![Experience](https://github.com/ravikumar-3481/Portfoli0/blob/main/img/exep.jpg)
+![Contact Form](https://github.com/ravikumar-3481/Portfoli0/blob/main/img/Form.jpg)
 
-1. Hero section [Hero Section](https://github.com/ravikumar-3481/Portfoli0/blob/main/img/hero.jpg))
-![Projects Section](https://raw.githubusercontent.com/ravikumar-3481/portfolio/main/img/projects.png)
-![Contact Form](https://raw.githubusercontent.com/ravikumar-3481/portfolio/main/img/contact.png)
 
 
 ---
