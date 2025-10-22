@@ -76,13 +76,12 @@ Simply open index.html in your browser
     └── img/            # Images and icons used
 
 
-
-📸 Screenshots
-
-Hero Section	Projects Section	Contact Form
+## 📸 Screenshot 
 
 
-
+![Hero Section](https://github.com/ravikumar-3481/Portfoli0/blob/main/img/hero.jpg))
+![Projects Section](https://raw.githubusercontent.com/ravikumar-3481/portfolio/main/img/projects.png)
+![Contact Form](https://raw.githubusercontent.com/ravikumar-3481/portfolio/main/img/contact.png)
 
 
 ---
