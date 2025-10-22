@@ -1,6 +1,6 @@
 # 🌐 Ravi Vishwakarma — Personal Portfolio
 
-![Ravi Vishwakarma](https://your-image-link.com/profile.jpg)  
+![Ravi Vishwakarma](img/profile.png)  
 *Digital Service Specialist | Freelancer | AI & Data Science Student*  
 
 ---
