@@ -67,18 +67,15 @@ Simply open index.html in your browser
 
 
 
----
-
-📁 Project Structure
-
-portfolio/
-├── index.html      # Main HTML structure
-├── style.css       # Styling and responsive layout
-├── script.js       # JavaScript interactions and animations
-└── img/            # Images and icons used
+## 📁 Project Structure
+    ```text
+    portfolio/
+    ├── index.html      # Main HTML structure
+    ├── style.css       # Styling and responsive layout
+    ├── script.js       # JavaScript interactions and animations
+    └── img/            # Images and icons used
 
 
----
 
 📸 Screenshots
 
