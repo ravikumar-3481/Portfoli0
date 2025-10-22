@@ -662,7 +662,7 @@
       transition: transform 0.3s ease;
       opacity: 0;
       transform: translateY(-25px);
-      height: 33rem;
+      height: 35rem;
       width: 23rem;
       margin-left: 1.5rem;
       display: row;
