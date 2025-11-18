@@ -198,7 +198,7 @@
       overflow: hidden;
       margin-top: -8rem;
       width: 100%;
-      filter: blur(24px);
+      filter: blur(8px);
     }
     .hero::before {
       content: '';
@@ -208,6 +208,7 @@
       width: 100%;
       height: 100%;
       filter: blur(24px);
+      transform: scale(1.1);
       z-index: 1;
     }
     .hero-content {
