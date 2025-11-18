@@ -132,31 +132,6 @@
       background: rgba(10, 15, 60, 0.95);
       backdrop-filter: blur(8px);
       padding: 2rem;
-      z-index: 1000;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transform: translateX(100%);
-      transition: transform 0.3s ease;
-      user-select: none;
-    }
-    .vi {
-      color: var(--color-primary);
-      text-shadow: 0 0 10px var(--color-primary);
-    }
-    .mobile-nav.active {
-      display: flex;
-      transform: translateX(0);
-    }
-    .mobile-nav a {
-      color: var(--color-text-dark);
-      font-size: 1.5rem;
-      margin: 1rem 0;
-      font-weight: 600;
-      text-transform: uppercase;
-      text-shadow: 0 0 5px #ffff;
-    }
-    .mobile-nav a:hover {
       color: var(--color-primary);
       text-shadow: 0 0 5px var(--color-primary);
     }
@@ -209,7 +184,32 @@
       width: 100%;
       height: 100%;
       filter: blur(8px);
-      transform: scale(1.1);
+      transform: scale(1.1);      z-index: 1000;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      user-select: none;
+    }
+    .vi {
+      color: var(--color-primary);
+      text-shadow: 0 0 10px var(--color-primary);
+    }
+    .mobile-nav.active {
+      display: flex;
+      transform: translateX(0);
+    }
+    .mobile-nav a {
+      color: var(--color-text-dark);
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-shadow: 0 0 5px #ffff;
+    }
+    .mobile-nav a:hover {
+
       z-index: 1;
     }
     .hero-content {
