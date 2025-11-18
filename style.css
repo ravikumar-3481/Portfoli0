@@ -194,14 +194,11 @@
       justify-content: center;
       align-items: center;
       background: url('img/image_search_1763470276760.png') no-repeat center center/cover;
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
       background-attachment: fixed;
       overflow: hidden;
       margin-top: -8rem;
       width: 100%;
       filter: blur(24px);
-      transform: scale(1.1); /* blur edges hide */
     }
     .hero::before {
       content: '';
@@ -211,7 +208,6 @@
       width: 100%;
       height: 100%;
       filter: blur(24px);
-      transform: scale(1.1); /* blur edges hide */
       z-index: 1;
     }
     .hero-content {
