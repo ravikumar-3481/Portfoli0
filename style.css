@@ -200,6 +200,8 @@
       overflow: hidden;
       margin-top: -8rem;
       width: 100%;
+      filter: blur(24px);
+      transform: scale(1.1); /* blur edges hide */
     }
     .hero::before {
       content: '';
