@@ -132,7 +132,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: url('img/nav2.png')center/cover no-repeat;
+      background: transparent;
       backdrop-filter: blur(8px);
       padding: 2rem;
       z-index: 1000;
