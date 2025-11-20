@@ -64,15 +64,17 @@
       left: 0;
       width: 100%;
       background: transparent;
+      border-radius: 30px;
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       z-index: 1000;
-      
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
+      /*border-right: 16px;*/
+      backdrop-filter: blur(50px);
+      -webkit-backdrop-filter: blur(50px);
       transition: background 0.4s ease, box-shadow 0.4s ease, color 0.3s ease;
+      height: 4rem;
     }
     header .logo, header nav, header .menu-icon {
       position: relative;
@@ -121,6 +123,7 @@
       right: 1rem;
       z-index: 1001;
       margin-top: -1.4rem;
+      
     }
     .mobile-nav {
       display: none;
@@ -129,9 +132,34 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(10, 15, 60, 0.95);
+      background: url('img/nav2.png')center/cover no-repeat;
       backdrop-filter: blur(8px);
       padding: 2rem;
+      z-index: 1000;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      user-select: none;
+    }
+    .vi {
+      color: var(--color-primary);
+      text-shadow: 0 0 10px var(--color-primary);
+    }
+    .mobile-nav.active {
+      display: flex;
+      transform: translateX(0);
+    }
+    .mobile-nav a {
+      color: var(--color-text-dark);
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-shadow: 0 0 5px #ffff;
+    }
+    .mobile-nav a:hover {
       color: var(--color-primary);
       text-shadow: 0 0 5px var(--color-primary);
     }
@@ -168,13 +196,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: url('img/image_search_1763470276760.png') no-repeat center center/cover;
+      background: url("img/hero4.gif") center/cover no-repeat;
       background-attachment: fixed;
       overflow: hidden;
       margin-top: -8rem;
       width: 100%;
-      filter: blur(8px);
-      transform: scale(1.1);
+      transform: scale(1.1); /* blur edges hide */
+      z-index: 1;/* blur edges hide */
     }
     .hero::before {
       content: '';
@@ -183,35 +211,28 @@
       left: 0;
       width: 100%;
       height: 100%;
-      filter: blur(8px);
-      transform: scale(1.1);      z-index: 1000;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transform: translateX(100%);
-      transition: transform 0.3s ease;
-      user-select: none;
+     /* filter: blur(8px);*/
+      inset: 0;
+      z-index: -1; /* image background */
+    
     }
-    .vi {
-      color: var(--color-primary);
-      text-shadow: 0 0 10px var(--color-primary);
+     .hero-glass {
+       background: transparent;  /* transparent white */
+       backdrop-filter: blur(12px);            /* glass blur */
+       -webkit-backdrop-filter: blur(12px);    /* safari support */
+        border-radius: 16px;
+        display: flex;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+        position: fixed;
+        z-index: 5;
+        padding: 2.5rem;
+        height: 105vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
-    .mobile-nav.active {
-      display: flex;
-      transform: translateX(0);
-    }
-    .mobile-nav a {
-      color: var(--color-text-dark);
-      font-size: 1.5rem;
-      margin: 1rem 0;
-      font-weight: 600;
-      text-transform: uppercase;
-      text-shadow: 0 0 5px #ffff;
-    }
-    .mobile-nav a:hover {
-
-      z-index: 1;
-    }
+ 
     .hero-content {
       display: flex;
       justify-content: center;
@@ -220,8 +241,9 @@
       max-width: 1200px;
       padding: 0 2rem;
       position: relative;
-      z-index: 2;
       gap: 2rem;
+      z-index: 5;
+      
     }
     .hero-text {
       max-width: 100%;
@@ -243,6 +265,7 @@
       margin-bottom: 1rem;
       text-align: center;
       text-shadow: none;
+    
     }
     .typing-container {
       font-size: 3.5rem;
@@ -1004,7 +1027,6 @@
             margin-top: -3rem;
             text-align: left;
         }
-
         .skills1 {
             display: flex;
             flex-wrap: wrap;
@@ -1022,10 +1044,6 @@
             transition: background 0.3s ease, color 0.3s ease;
             margin-top: -0.4rem;
         }
-
-
-
-
         .bg-circle {
             position: absolute;
             border-radius: 50%;
@@ -1896,6 +1914,9 @@
     }
     @media (max-width: 480px) {
       .hero {
+        height: 60rem;
+      }
+      .hero-glass {
         height: 60rem;
       }
       .greeting {
