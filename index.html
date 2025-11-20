@@ -118,6 +118,7 @@
     <i class="fas fa-bars menu-icon reveal" onclick="toggleMenu()"></i>
   </header>
   <div class="mobile-nav" id="mobileNav">
+    
     <i class="fas fa-times close-icon" onclick="toggleMenu()"></i>
     <a href="#home" onclick="toggleMenu()">Home</a>
     <a href="#about" onclick="toggleMenu()">About</a>
@@ -136,14 +137,15 @@
   </div>
   <main>
     <section class="hero reveal" id="home">
-      <div class="hero-content reveal">
+      <div class="hero-glass">
+        <div class="hero-content reveal">
         <div class="hero-text reveal">
           <div class="typing-container reveal">
             <span class="greeting reveal">Hi, I am </span>
             <span class="typing-text reveal"></span>
           </div>
           <p class="cse reveal">B.Tech CSE (AI & Data Science)<br>
-             Student at AKS University, passionate about <br>coding and creating smart solutions.</p>
+             Student at AKS University, passionate <br>about coding and creating smart solutions.</p>
           <div class="button-container reveal">
             <a href="#contact" class="btn-primary reveal">Get in Touch</a>
             <a href="#" class="btn-sec reveal" onclick="showResumePopup()">View Resume</a>
@@ -156,8 +158,9 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
-        <section id="about" class="about reveal">
+    <section id="about" class="about reveal">
         <div class="background-graphic">
             <div class="circle"></div>
             <div class="circle"></div>
@@ -580,8 +583,7 @@
   <footer>
     <p>© <span class="year" id="year"></span> Ravi. All rights reserved.</p>.
   </footer>
-  <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
-  <zapier-interfaces-chatbot-embed is-popup='true' chatbot-id='cmevp30go001diyg0qkc3zygv'></zapier-interfaces-chatbot-embed>
+
   <script src="script.js"></script>
   <script>
     window.addEventListener("scroll", () => {
