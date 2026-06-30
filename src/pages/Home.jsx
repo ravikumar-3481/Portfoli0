@@ -9,7 +9,6 @@ import Experience from '../components/Experience';
 import Toolbox from '../components/Toolbox';
 import GitHubStats from '../components/GitHubStats';
 import Education from '../components/Education';
-import Certifications from '../components/Certifications';
 import Activities from '../components/Activities';
 import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
@@ -61,7 +60,6 @@ export default function Home() {
         <Toolbox />
         <GitHubStats />
         <Education />
-        <Certifications />
         <Activities />
         <Testimonials />
         <Contact />
