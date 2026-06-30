@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { updateProjectUrl } from '../utils/urlHelper';
 
 // Helper function to resolve dynamic Devicon or FontAwesome classes based on technology names
 const getTechIconClass = (techName) => {
@@ -51,9 +52,11 @@ export default function ProjectDetails() {
         return res.json();
       })
       .then((data) => {
-        const found = data.find((p) => p.id.toString() === id);
+        const numericId = parseInt(id, 10);
+        const found = data.find((p) => p.id === numericId);
         if (found) {
           setProject(found);
+          updateProjectUrl(found.id, found.title);
         } else {
           setError("Project Not Found");
         }

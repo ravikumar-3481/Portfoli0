@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { slugify } from '../utils/urlHelper';
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
@@ -84,7 +85,7 @@ export default function Projects() {
                         <i className="fab fa-github"></i> Source
                       </a>
                     </div>
-                    <Link to={`/project/${p.id}`} className="view-more-modern" style={{ textDecoration: 'none' }}>
+                    <Link to={`/project/${p.id}-${slugify(p.title)}`} className="view-more-modern" style={{ textDecoration: 'none' }}>
                       Explore Case Study <i className="fas fa-arrow-right"></i>
                     </Link>
                   </div>
